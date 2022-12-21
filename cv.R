@@ -144,7 +144,7 @@ dotplot(go1, showCategory=10, font.size=15)
 summary_go <- go1@result
 
 # visualization 2
-
+long_subset <- stack(Format)
 # making the mean values into a long format
 stackbar<-gather(long_subset, key="group", value="mean", -c(ind))
 
